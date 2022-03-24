@@ -1,0 +1,35 @@
+.chatIcon {
+  background: white;
+  width: 50px;
+  height: 150px;
+  position: absolute !important;
+  box-shadow: -2px 0px 2px 1px rgba(0, 0, 0, 0.05);
+  right: 0;
+  top: 50%;
+  border-radius: 10px 0 0 10px !important;
+  transform: translateY(-50%);
+}
+
+.newMessage {
+  animation: newMessage 2s ease infinite alternate;
+}
+
+.iconButton {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+.iconButton:hover {
+  border-radius: 0;
+}
+.chatIcon:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes newMessage {
+  from {
+    background: white;
+  }
+  to {
+    background: rgb(124, 255, 255);
+  }
+}

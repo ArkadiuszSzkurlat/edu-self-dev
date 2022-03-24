@@ -1,0 +1,20 @@
+.direct_calling_dialog {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: calc(50% - 150px);
+  left: calc(50% - 200px);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 20;
+}
+
+.direct_call_dialog_button_container {
+  margin-top: 20px;
+}

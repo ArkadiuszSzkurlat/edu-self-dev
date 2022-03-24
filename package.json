@@ -1,0 +1,66 @@
+{
+  "name": "altum-app-backend",
+  "version": "1.0.0",
+  "description": "server side for video streaming app",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "start-client": "cd client && npm start",
+    "heroku-postbuild": "npm run install-client && npm run build && npm install",
+    "start": "npm install && node server.js",
+    "git-deploy": "git add . && git commit -m Heroku && git push",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+  },
+  "author": "Mateusz Rosiński, Arkadiusz Szkurłat",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.5.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "common": "^0.2.5",
+    "compression": "^1.7.4",
+    "concurrently": "^6.2.1",
+    "connect-timeout": "^1.9.0",
+    "cookie-parser": "^1.4.5",
+    "core-util-is": "^1.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
+    "express-sslify": "^1.2.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^8.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.3",
+    "nodemailer-sendgrid": "^1.0.3",
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7",
+    "peer": "^0.6.1",
+    "peerjs": "^1.3.2",
+    "pug": "^3.0.2",
+    "sib-api-v3-sdk": "^8.2.1",
+    "slugify": "^1.6.0",
+    "socket.io": "^4.2.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.6.0",
+    "xss-clean": "^0.1.1"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "7.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altum-page/altum-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/altum-page/altum-app/issues"
+  },
+  "homepage": "https://github.com/altum-page/altum-app#readme"
+}

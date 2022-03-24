@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  padding: 0px 100px 20px 40px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  font-family: Merriweather, serif;
+}
+
+.letter {
+  color: rgb(67, 67, 190);
+  font-size: 84px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Elsie;
+}
+
+.small-letters {
+  font-size: 42px;
+  font-weight: 400;
+  width: 0px;
+  opacity: 0;
+  transform: translateY(-12.5px);
+}
+
+@media only screen and (max-width: 600px) {
+  .letter {
+    font-size: 60px;
+  }
+  .small-letters {
+    font-size: 30px;
+  }
+}
