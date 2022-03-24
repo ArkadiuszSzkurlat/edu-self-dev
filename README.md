@@ -15,7 +15,8 @@
 
 
 ## General Information
-The application which was intended to be an application adapted to online training. This is an initial commercial application that has changed it's course. 
+The application which was intended to be an application adapted to online training. This is an initial commercial application that has changed it's course.
+This repository is a copy of a private repository, which we could not set as public, because by our mistake there was information in commits that threatens the security of project. That's why is so small number of commits.
 
 
 ## Technologies Used
